@@ -1,0 +1,19 @@
+<ion-view view-title="Login" align-title="left">
+    <ion-content style="background: url(img/login.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>SocialDRONE</h1>
+            </div>
+        </div>
+        <div class="list">
+            <ion-md-input placeholder="Username" ng-model="loginUser.username" highlight-color="balanced" type="text"></ion-md-input>
+            <ion-md-input placeholder="Password" highlight-color="energized" ng-model="loginUser.password" type="password"></ion-md-input>
+        </div>
+        <div class="padding">
+            <button ng-click="loginUser()" class="button button-full button-assertive ink">Login</button>
+            <button ui-sref="app.signup" class="button button-full button-bar-calm ink">Sign UP</button>
+            <button style="text-align: center" class="button button-full icon-left ion-social-facebook button-positive-900" ng-click="loginFB()">Login with Facebook</button>
+        </div>
+    </ion-content>
+</ion-view>
