@@ -1,0 +1,28 @@
+﻿
+<ion-view view-title="Users in SocialDrone">
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear icon ion-ios-search-strong" ng-click="showFilterBar()">
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content direction="y" scrollbar-y="false">
+
+        <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="refreshItems()">
+        </ion-refresher>
+
+        <ion-list>
+            <ion-item ng-repeat="item in items" ng-click="onselect(item.text)">
+                <a class="item item-avatar item-icon-right">
+                    <h2>{{item.text}}</h2>
+                </a>
+            </ion-item>
+        </ion-list>
+
+        <div ng-if="items !== undefined && !items.length" class="no-results">
+            <p>No Results</p>
+        </div>
+
+    </ion-content>
+
+</ion-view>

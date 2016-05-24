@@ -1,57 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
-    <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <title>Ionic Material Docs</title>
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic" rel="stylesheet">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="lib/ion-md-input/css/ion-md-input.min.css" rel="stylesheet">
-    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
-    <script src="lib/nya-bootstrap-select/dist/js/nya-bs-select.js"></script>
-    <script src="lib/ion-md-input/js/ion-md-input.min.js"></script>
-    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
-    <script src="lib/ngOpenFB/ngOpenFB.js"></script>
-    <script src="js/ngopenfb.js"></script>
-    <script src="js/openfb.js"></script>
-    <link href="lib/ionic-filter-bar/dist/ionic.filter.bar.min.css" rel="stylesheet">
-    <script src="lib/ionic-filter-bar/dist/ionic.filter.bar.min.js"></script>
-    <script src="lib/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
-    <script src="lib/ion-autocomplete/dist/ion-autocomplete.js"></script>
-    <script src="lib/angular-strap/dist/angular-strap.min.js"></script>
-    <script src="lib/ionic-modal-select/dist/ionic-modal-select.js"></script>
-    <script src="lib/angular-strap/dist/angular-strap.tpl.min.js"></script>
-    <link href="lib/ion-autocomplete/dist/ion-autocomplete.css" rel="stylesheet">
-    <!-- cordova script (this will undefinedbe a 404 during development) -->
+    <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <!-- your app's js -->
-    <!--socket io client library-->
-    <script src="http://chat.socket.io/socket.io/socket.io.js"></script>
-
-    <!-- Other Libraries-->
-    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="lib/angular-socket-io/socket.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/Controllers/SignupCtrl.js"></script>
-    <script src="js/Controllers/ProfileCtrl.js"></script>
-    <script src="js/Controllers/FollowingCtrl.js"></script>
-    <script src="js/Controllers/searchCtrl.js"></script>
-    <script src="js/Controllers/usersearchCtrl.js"></script>
-    <script src="js/Controllers/FollsearchCtrl.js"></script>
-    <script src="js/Controllers/FollowerCtrl.js"></script>
-    <script src="js/Controllers/FollowerSearchCtrl.js"></script>
-    <script src="js/Controllers/ItemController.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true&libraries=places"></script>
-    <script src="js/ng-cordova.min.js"></script>
-    <script src="js/ngopenfb.js"></script>
-
+    <script src="js/controllers/AppCtrl.js"></script>
+    <script src="js/controllers/InkCtrl.js"></script>
+    <link href="lib/ionic-filter-bar/dist/ionic.filter.bar.min.css" rel="stylesheet">
+    <script src="lib/ionic-filter-bar/dist/ionic.filter.bar.min.js"></script>
+    <script src="js/controllers/ComponentsCtrl.js"></script>
+    <script src="js/controllers/ListsCtrl.js"></script>
+    <script src="js/controllers/SetupCtrl.js"></script>
+    <script src="js/controllers/ExtensionsCtrl.js"></script>
+    <script src="js/controllers/MotionCtrl.js"></script>
 </head>
 <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+    <!--<ion-pane>
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Ionic Blank Starter</h1>
+        </ion-header-bar>
+        <ion-content>
+        </ion-content>
+    </ion-pane>-->
     <ion-nav-view></ion-nav-view>
+    <div id="modal" class=""></div>
 </body>
 </html>
